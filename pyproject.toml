@@ -1,13 +1,16 @@
 [tool.poetry]
 name = "llmc"
-version = "0.1.0"
+version = "0.1.2"
 description = "Using LLMs for compilers"
 authors = ["Kaiser Pister <pisterk@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
+openai = "^0.27.4"
 
+[tool.poetry.scripts]
+llmc = "llmc:main"
 
 [build-system]
 requires = ["poetry-core"]
